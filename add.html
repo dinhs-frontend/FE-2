@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/headings.css">
-        <link rel="stylesheet" href="css/form.css">
+        <link rel="stylesheet" href="_css/style.css">
+        <link rel="stylesheet" href="_css/headings.css">
+        <link rel="stylesheet" href="_css/form.css">
         <link
             href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
             rel="stylesheet">
@@ -16,7 +16,7 @@
                     <h1>Lufmi</h1>
                 </li>
                 <li>
-                    <img id="logo" src="img/logo.svg" alt="Lufmi">
+                    <img id="logo" src="_img/logo.svg" alt="Lufmi">
                 </li>
             </ul>
         </nav>
@@ -34,7 +34,7 @@
                         <h1>Lufmi</h1>
                     </li>
                     <li>
-                        <a href="about.html">Home</a>
+                        <a href="index.html">Home</a>
                     </li>
                     <li>
                         <a href="topics.html">Topics</a>
@@ -46,7 +46,6 @@
             </div>
         </nav>
     </header>
-
     <section>
         <h1>Choose Favorite topics</h1>
         <form id="topiclijst" method="POST" action="topics.html">
@@ -63,35 +62,40 @@
 
                 <button id="savebtn">Save</button>
             </div>
-
             <div class="InputGroup">
                 <label class="nameTopic" for="">Vacation</label>
-                <input type="checkbox" name="name" id="size_4"  value="yoyo"/>
-                <label class="topicLabel" for="size_4" >Zon</label>
+                <input type="checkbox" name="name" id="size_4" value="yoyo"/>
+                <label class="topicLabel" for="size_4">Zon</label>
 
                 <input type="checkbox" name="name" id="size_5" value="Pasta"/>
                 <label class="topicLabel" for="size_5">Cultuur</label>
 
                 <input type="checkbox" name="name" id="size_6" value="Pizza"/>
-                <label class="topicLabel" for="size_6" >Avontuur</label>
+                <label class="topicLabel" for="size_6">Avontuur</label>
 
                 <button id="savebtn">Save</button>
             </div>
 
             <div class="InputGroup">
                 <label class="nameTopic" for="">Movies</label>
-                <input type="checkbox" name="name" id="size_7"  value="yoyo"/>
-                <label class="topicLabel" for="size_7" >Horror</label>
+                <input
+                    type="checkbox"
+                    data-help="Your full name"
+                    name="name"
+                    id="size_7"
+                    value="yoyo"/>
+                <label class="topicLabel" for="size_7">Horror</label>
 
                 <input type="checkbox" name="name" id="size_8" value="Pasta"/>
                 <label class="topicLabel" for="size_8">Comedy</label>
 
                 <input type="checkbox" name="name" id="size_9" value="Pizza"/>
-                <label class="topicLabel" for="size_9" >Thriller</label>
+                <label class="topicLabel" for="size_9">Thriller</label>
 
                 <button id="savebtn">Save</button>
             </div>
         </form>
+
     </section>
 
 </body>

@@ -266,3 +266,109 @@ section {
     display: flex;
     justify-content: center;
 }
+/*--------------------heart------------------*/
+#heart {
+    width: 5rem;
+    position: absolute;
+
+}
+
+/*----------dropdown choose user-----------------------*/
+
+
+*:focus {
+	outline: none;
+	box-shadow: 0 0 0 0.125rem #fff, 0 0 0 0.25rem white;
+}
+
+
+li {
+	margin-bottom: 0.75rem;
+}
+
+.accountA {
+	padding: 0.25rem 0.125rem 0;
+	color: #9cb4ec;
+	text-decoration: none;
+	border-bottom: 1px solid #9cb4ec;
+	transition: all 150ms ease;
+}
+
+.accountA:focus{
+        background-color: #cbffd9;
+		color: #9cdcec;
+		border-bottom: 3px solid #9cdcec;
+}
+
+.accountA:hover{
+    background-color: #cbffd9;
+    color: #9cdcec;
+    border-bottom: 3px solid #9cdcec;
+}
+
+.accordion {
+	max-width: 40rem;
+	margin: auto;
+	}
+	
+.accordion__button {
+		text-align: center;
+		font-size: 1rem;
+		font-family: 'Poppins', sans-serif;
+		font-weight: 500;
+		background-color: #9cb4ec;
+		color: #fff;
+		border: none;
+		padding: 0.5rem 1rem;
+		border-radius: 0.25rem;
+		display: block;
+		width: 100%;
+		/* z-index: 1; // add z-index so focus is always visible */
+		position: relative;
+		margin-top: 1rem;
+		transition: all 150ms linear;
+}
+
+.accordion__button ::after {
+    display: inline-block;
+    position: absolute;
+    right: 0.875rem;
+    top: 0.875rem;
+    width: 0.4rem;
+    height: 0.4rem;
+    border-right: 0.25rem solid #fff;
+    border-top: 0.25rem solid #fff;
+    transform: rotate(135deg);
+    transition: transform 250ms linear;
+}
+
+.accordion__button:hover {
+    background-color: #9cb4ec;
+    transform: scale(1.025);
+}
+/*-------dropdown button-------------------------------*/
+.accordion__button[aria-expanded='true'] {
+    background-color: #9cb4ec;
+}
+
+.accordion__button[aria-expanded='true']::after {
+    transform: rotate(315deg) translateY(0.25rem);
+}
+
+.accordion__content {
+    padding: 0.875rem;
+    margin-left: 0;
+    background-color: #fff;
+    border: 2px solid #eee;
+    box-shadow: 1px 4px 10px 1px rgba(0, 0, 0, 0.15);
+    transition: all 200ms linear;
+}
+.accordion__content[aria-hidden='false'] {
+    display: block;
+}
+
+.accordion__content[aria-hidden='true'] {
+    display: none;
+}
+
+/* bron-----https://codepen.io/corinneling/pen/LwRyXO---

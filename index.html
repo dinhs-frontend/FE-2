@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="_css/style.css">
         <title>Dating-app Lufmi</title>
     </head>
     <body>
@@ -14,7 +14,7 @@
                         <h1>Lufmi</h1>
                     </li>
                     <li>
-                        <img id="logo" src="img/logo.svg" alt="Lufmi">
+                        <img id="logo" src="_img/logo.svg" alt="Lufmi">
                     </li>
                 </ul>
             </nav>
@@ -32,33 +32,43 @@
                             <h1>Lufmi</h1>
                         </li>
                         <li>
-                            <a href="about.html">Home</a>
+                            <a href="index.html">Home</a>
                         </li>
                         <li>
                             <a href="topics.html">Topics</a>
                         </li>
-                        <li>
-                            <a href="account.html">Account</a>
-                        </li>
+
                     </ul>
                 </div>
             </nav>
         </header>
+        <button class="accordion__button" aria-expanded="true" aria-controls="accordion-resources">Kies ander account</button>
+		</dt>
+		<dd class="accordion__content" id="accordion-resources" aria-hidden="false">
+			<ul>
+                <li><a class="accountA" href="index.html">Flux</a> <li>
+                <li><a class="accountA" href="index.html">Zoë</a></li>
+                <li><a class="accountA" href="index.html">Joey</a></li>
+			</ul>
+		</dd>
+		<dt>
         <main>
-            <main>
-                <form id="user" method="POST" action="/match">
-                    <h2>Flux</h2>
-                    <img src="img/Anna.jpg" alt="Flux">
-                    <p>Flux 24 jaar oud. Woont in Bussum. Ik hou graag van eten en slapen. Daarnaast
-                        werk ik bij de Starbucks als parttimer.</p>
-                    <a class="LikeButton" href="#">
-                        <img src="img/brokeheart.svg" alt="">
-                    </a>
-                    <a class="LikeButton1" href="#">
-                        <img src="img/heart2.svg" alt="">
-                    </a>
-                </form>
-            </main>
+            <form id="user" method="POST" action="/match">
+                <h2>Flux</h2>
+                <img src="_img/Anna.jpg" alt="Flux">
+                <p>Flux 24 jaar oud. Woont in Bussum. Ik hou graag van eten en slapen. Daarnaast
+                    werk ik bij de Starbucks als parttimer.</p>
+                <a class="LikeButton" href="#">
+                    <img src="_img/brokeheart.svg" alt="">
+                </a>
+                <a class="LikeButton1" href="#">
+                    <img src="_img/heart2.svg" alt="">
+                </a>
+            </form>
+            <img src="_img/logo.svg" id="heart">
         </main>
+
+        
+        <script type="text/javascript" src="_js/script.js"></script>
     </body>
 </html>
