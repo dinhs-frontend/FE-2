@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="_css/style.css">
+        <link rel="stylesheet" href="_css/headings.css">
+        <link rel="stylesheet" href="_css/form.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet">
+        <title>Lufmi</title>
+    </head>
+    <header>
+        <nav class="navigatie1">
+            <ul>
+                <li>
+                    <h1>Lufmi</h1>
+                </li>
+                <li>
+                    <img id="logo" src="_img/logo.svg" alt="Lufmi">
+                </li>
+            </ul>
+        </nav>
+        <nav class="navigatie2">
+            <div id="menuToggle">
+                <input type="checkbox"/>
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <li>
+                        <h1>Account</h1>
+                    </li>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="topics.html">Topics</a>
+                    </li>
+                    <li>
+                        <a href="account.html">Account</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- <h1>Create a new account</h1>
+        <div id="progressBar">
+            <p class="steps">1</p>
+            <p class="steps">2</p>
+            <p class="steps">3</p>
+        </div> -->
+
+        <form class="newAccount" action="#">
+            <fieldset class="field1">
+                <h2>Sign up</h2>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" placeholder="Your e-mailadres" required>
+
+                <label for="psw">Password</label>
+                <input type="password" name="password" placeholder="password" required>
+
+                <label for="psw-repeat">Repeat password</label>
+                <input type="password" name="password-repeat" placeholder="password" required> 
+                
+                <button class="nextBtn" type="submit">Next</button>
+            </fieldset>  
+    
+            <fieldset class="field2">
+                <h2>Your fullname and age</h2>
+                <label for="name">Name</label>
+                <input type="text" name="name" required>
+
+                <label for="lastname">Last name</label>
+                <input type="text" name="lastname" required>
+
+                <label for="age">age</label>
+                <input type="number" name="age" required>
+
+                <button class="previousBtn" type="submit">Previous</button>
+                <button class="nextBtn" type="submit">Next</button>
+            </fieldset>
+          
+            <fieldset class="field3">
+                <h2>About yourself</h2>
+                <label for="about">Bio</label>
+                <textarea name="about" required></textarea>
+
+                <button class="previousBtn" type="submit">Previous</button>
+                <button class="nextBtn" type="submit" >Submit</button>
+            </fieldset>
+        </form>
+    </div>
+
+    <script type="text/javascript" src="_js/script.js"></script>
+</body>
+</html>
