@@ -39,9 +39,7 @@ h1 {
     padding-top: 0.7rem;
     text-align: center;
 }
-/*-----------------------*/
-
-/*---------------*/
+/*---------------------------------------------------*/
 
 .InputGroup {
     display: flex;
@@ -99,7 +97,7 @@ input[type="checkbox"]:hover:not(:checked) + label {
     color: black;
 }
 
-#savebtn {
+.savebtn {
     margin-left: 1.2rem;
     margin-right: 5px;
     background-color: cornflowerblue;
@@ -197,21 +195,18 @@ input[type=text] {
     display: block;
 }
 
-/*---------------new account-----------------------*/
+/*-New account--------------------------------*/
  .container {
     border-radius: 5px;
     padding: 50px 35px 10px 35px;
-    display: flex;
     justify-content: center;
  }
 
 .newAccount {
-    /* margin-left: auto;
-    margin-right: auto; */
     background-color: white;
-    /* width: 100%; */
+    width: 25%;
+    margin: 0 auto;
     padding: 0.5rem;
-    /* max-width: 25rem; */
     border-radius: 15px;
     margin-top: 3rem;
     -webkit-box-shadow: 6px 7px 33px -8px rgba(0,0,0,0.75);
@@ -272,7 +267,11 @@ fieldset input, textarea {
     margin-top: 3px;
 }
 
-.nextBtn {
+.account_page {
+    margin-bottom: 30px;
+}
+.account_page button:hover { cursor: pointer; } 
+.account_page button {
     margin-right: 5px;
     background-color: cornflowerblue;
     padding: 1rem;
@@ -285,21 +284,41 @@ fieldset input, textarea {
     
 }
 
-/*-----------Progress bar--------------*/
+/*--Progress bar---------------------------------------------*/
 
-#progressBar {
+.line {
+    background-color: black;
+    width: 100px;
+    height: 1px;
+    margin: 0;
+    position: relative;
+    top: 35px;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+#progress_bar_container {
+    width: 100%;
+    /* margin: 0 auto; */
     display: flex;
     justify-content: center;
-    
+}
+.progress_item {
+    background-color: rgb(156, 220, 236);
+    margin: 0 10px;
+    text-align: center;
+    width: 66px;
+    border: solid 1px black;
+    border-radius: 100px;
+}
+.progress1, .progress2, .progress3 {
+    float: left;
+}
+.current_progress {
+    border: 2px solid white;
+    background-color: #d5d2f3;
 }
 
-.hide {
-        display: none;
-}
-
-.show {
-    
-}
+.hide { display: none; }
 
 .step.completed  {
 	color:  white;
