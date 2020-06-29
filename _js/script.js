@@ -6,7 +6,6 @@ const field3 = document.querySelector('.field3');
 const progress1 = document.querySelector('.progress1');
 const progress2 = document.querySelector('.progress2');
 const progress3 = document.querySelector('.progress3');
-const logo_container = document.querySelector('#logo_container');
 
 // Verberg 'field2' en 'field3' on load.
 field2.classList.add('hide');
@@ -88,3 +87,4 @@ add_submit.onclick = function() {
 //Bronnen: 
 //Developer.mozilla. (z.d.). GlobalEventHandlers.onclick. Geraadpleegd van https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onclick
 //Developer.mozilla. (z.d.). Node.appendChild (). Geraadpleegd van https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild
+//Developer.mozilla. (z.d.). Element.classList. Geraadpleegd van https://developer.mozilla.org/en-US/docs/Web/API/Element/classList
